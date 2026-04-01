@@ -15,7 +15,6 @@ const cadastrar = async (req, res) => {
     } catch (error) {
         return res.status(500).json({
             erro: "Erro ao cadastrar evento",
-            detalhe: error.message
         });
     }
 };
@@ -29,7 +28,6 @@ const listar = async (req, res) => {
     } catch (error) {
         return res.status(500).json({
             erro: "Erro ao listar eventos",
-            detalhe: error.message
         });
     }
 };
@@ -53,7 +51,6 @@ const buscar = async (req, res) => {
     } catch (error) {
         return res.status(500).json({
             erro: "Erro ao buscar evento",
-            detalhe: error.message
         });
     }
 };
@@ -77,7 +74,6 @@ const atualizar = async (req, res) => {
     } catch (error) {
         return res.status(500).json({
             erro: "Erro ao atualizar evento",
-            detalhe: error.message
         });
     }
 };
@@ -125,7 +121,6 @@ const excluir = async (req, res) => {
     } catch (error) {
         return res.status(500).json({
             erro: "Erro ao excluir evento",
-            detalhe: error.message
         });
     }
 };
