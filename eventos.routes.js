@@ -14,5 +14,7 @@ router.get("/listar", listar);
 router.get("/buscar/:id", buscar);
 router.put("/atualizar/:id", atualizar);
 router.delete("/excluir/:id", excluir);
+router.delete("/encerrar/:id", encerrarEvento);
+
 
 module.exports = router;
